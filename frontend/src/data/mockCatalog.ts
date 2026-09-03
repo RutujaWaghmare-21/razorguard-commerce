@@ -1,0 +1,75 @@
+import type { Product } from '../types';
+
+export const mockCatalog: Product[] = [
+  {
+    id: 'p-001',
+    sku: 'RG-SSD-1TB',
+    name: 'Industrial NVMe SSD 1TB',
+    category: 'Storage Components',
+    unitCost: 3200,
+    listPrice: 4999,
+    minMarginPct: 18,
+    stock: 8400,
+    bulkTiers: [
+      { minQty: 50, discountPct: 4 },
+      { minQty: 200, discountPct: 8 },
+      { minQty: 500, discountPct: 12 },
+    ],
+  },
+  {
+    id: 'p-002',
+    sku: 'RG-CTRL-X9',
+    name: 'Embedded Controller Board X9',
+    category: 'Electronics',
+    unitCost: 1450,
+    listPrice: 2199,
+    minMarginPct: 20,
+    stock: 12300,
+    bulkTiers: [
+      { minQty: 100, discountPct: 5 },
+      { minQty: 400, discountPct: 9 },
+    ],
+  },
+  {
+    id: 'p-003',
+    sku: 'RG-BAT-48V',
+    name: 'LiFePO4 Battery Pack 48V/20Ah',
+    category: 'Power Systems',
+    unitCost: 8900,
+    listPrice: 12499,
+    minMarginPct: 15,
+    stock: 2100,
+    bulkTiers: [
+      { minQty: 20, discountPct: 3 },
+      { minQty: 100, discountPct: 7 },
+    ],
+  },
+  {
+    id: 'p-004',
+    sku: 'RG-SENS-IR4',
+    name: 'IR Proximity Sensor Array (Pack of 4)',
+    category: 'Sensors',
+    unitCost: 640,
+    listPrice: 999,
+    minMarginPct: 22,
+    stock: 30500,
+    bulkTiers: [
+      { minQty: 200, discountPct: 6 },
+      { minQty: 1000, discountPct: 11 },
+    ],
+  },
+  {
+    id: 'p-005',
+    sku: 'RG-ENCL-AL6',
+    name: 'Anodized Aluminium Enclosure 6U',
+    category: 'Enclosures',
+    unitCost: 2150,
+    listPrice: 3299,
+    minMarginPct: 16,
+    stock: 5600,
+    bulkTiers: [
+      { minQty: 30, discountPct: 4 },
+      { minQty: 150, discountPct: 8 },
+    ],
+  },
+];
